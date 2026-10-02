@@ -1,0 +1,10 @@
+class Solution {
+    public int[] runningSum(int[] a) {
+
+        for (int p = 1; p < a.length; p++) {
+            a[p] = a[p] + a[p - 1];
+        }
+
+        return a;
+    }
+}
